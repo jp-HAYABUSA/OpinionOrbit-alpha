@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline View - News Aggregator Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="hamburger-menu">
+        <img src="../homepage/img/hamburger_icon.png" alt="Menu">
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="../homepage/img/logo.png" alt="Site Logo" id="siteLogo" class="logo">
+            <nav class="vertical-nav">
+                <ul>
+                    <li><a href="../homepage/index.html"><img src="../homepage/img/icons_home.png" alt="Home"></a></li>
+                    <li><a href="../listView/index.html"><img src="../homepage/img/icons_List-view.png" alt="List View"></a></li>
+                    <li><a href="index.html"><img src="../homepage/img/icons_Timeline-view.png" alt="Timeline View" class="active"></a></li>
+                    <li><a href="../mapView/index.html"><img src="../homepage/img/icons_map-view.png" alt="Map View"></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="search-filter-section">
+                <input type="text" id="searchTopics" placeholder="Topics">
+                <div id="regionSelectors">
+                    <label><input type="checkbox" name="region" value="America"> America</label>
+                    <label><input type="checkbox" name="region" value="Europe"> Europe</label>
+                    <label><input type="checkbox" name="region" value="Asia"> Asia</label>
+                    <label><input type="checkbox" name="region" value="Japan"> Japan</label>
+                </div>
+                <button id="searchButton">Search</button>
+            </div>
+            <div class="timeline-section">
+                <!-- Timeline content will be dynamically injected here -->
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
